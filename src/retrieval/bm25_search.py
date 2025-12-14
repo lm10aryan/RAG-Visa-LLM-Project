@@ -48,7 +48,15 @@ class BM25Searcher:
         return results
 
     def _tokenize(self, text: str) -> List[str]:
+        """Tokenize text with stopword removal for better BM25."""
+        STOPWORDS = {
+            'a', 'an', 'and', 'are', 'as', 'at', 'be', 'by', 'for', 'from',
+            'has', 'he', 'in', 'is', 'it', 'its', 'of', 'on', 'that', 'the',
+            'to', 'was', 'will', 'with', 'what', 'when', 'where', 'who', 'how'
+        }
         tokens = re.findall(r"[a-z0-9]+", text.lower())
+        # Remove stopwords
+        tokens = [t for t in tokens if t not in STOPWORDS]
         return tokens
 
 

@@ -1,0 +1,164 @@
+{
+  "overall": {
+    "details": {
+      "baseline": {
+        "accuracy": 0.0,
+        "avg_time": 4.1325887044270835e-07
+      },
+      "semantic_only": {
+        "accuracy": 0.0,
+        "avg_time": 0.0385495662689209
+      },
+      "bm25_only": {
+        "accuracy": 0.0,
+        "avg_time": 9.560585021972656e-05
+      },
+      "hybrid": {
+        "accuracy": 0.0,
+        "avg_time": 0.010867993036905924
+      },
+      "enhanced": {
+        "accuracy": 0.0,
+        "avg_time": 0.017446478207906086
+      }
+    },
+    "best": "baseline"
+  },
+  "by_variant": {
+    "baseline": {
+      "accuracy": {
+        "overall": 0.0,
+        "by_category": {
+          "fact": 0.0,
+          "requirement": 0.0,
+          "complex": 0.0
+        }
+      },
+      "response_time": {
+        "avg": 4.1325887044270835e-07,
+        "total": 1.239776611328125e-05
+      },
+      "confidence_calibration": {},
+      "citation_quality": {
+        "coverage": 0.0,
+        "quality": 0.0
+      },
+      "retrieval_precision": {
+        "p_at_1": 0.0,
+        "p_at_3": 0.0,
+        "evaluated": 0
+      }
+    },
+    "semantic_only": {
+      "accuracy": {
+        "overall": 0.0,
+        "by_category": {
+          "fact": 0.0,
+          "requirement": 0.0,
+          "complex": 0.0
+        }
+      },
+      "response_time": {
+        "avg": 0.0385495662689209,
+        "total": 1.156486988067627
+      },
+      "confidence_calibration": {},
+      "citation_quality": {
+        "coverage": 1.0,
+        "quality": 0.0
+      },
+      "retrieval_precision": {
+        "p_at_1": 0.3333333333333333,
+        "p_at_3": 0.36666666666666664,
+        "evaluated": 30
+      }
+    },
+    "bm25_only": {
+      "accuracy": {
+        "overall": 0.0,
+        "by_category": {
+          "fact": 0.0,
+          "requirement": 0.0,
+          "complex": 0.0
+        }
+      },
+      "response_time": {
+        "avg": 9.560585021972656e-05,
+        "total": 0.002868175506591797
+      },
+      "confidence_calibration": {},
+      "citation_quality": {
+        "coverage": 1.0,
+        "quality": 0.0
+      },
+      "retrieval_precision": {
+        "p_at_1": 0.3,
+        "p_at_3": 0.43333333333333335,
+        "evaluated": 30
+      }
+    },
+    "hybrid": {
+      "accuracy": {
+        "overall": 0.0,
+        "by_category": {
+          "fact": 0.0,
+          "requirement": 0.0,
+          "complex": 0.0
+        }
+      },
+      "response_time": {
+        "avg": 0.010867993036905924,
+        "total": 0.32603979110717773
+      },
+      "confidence_calibration": {
+        "low": {
+          "accuracy": 0.0,
+          "count": 30
+        }
+      },
+      "citation_quality": {
+        "coverage": 1.0,
+        "quality": 0.0
+      },
+      "retrieval_precision": {
+        "p_at_1": 0.3333333333333333,
+        "p_at_3": 0.43333333333333335,
+        "evaluated": 30
+      }
+    },
+    "enhanced": {
+      "accuracy": {
+        "overall": 0.0,
+        "by_category": {
+          "fact": 0.0,
+          "requirement": 0.0,
+          "complex": 0.0
+        }
+      },
+      "response_time": {
+        "avg": 0.017446478207906086,
+        "total": 0.5233943462371826
+      },
+      "confidence_calibration": {
+        "low": {
+          "accuracy": 0.0,
+          "count": 30
+        }
+      },
+      "citation_quality": {
+        "coverage": 1.0,
+        "quality": 1.0
+      },
+      "retrieval_precision": {
+        "p_at_1": 0.2,
+        "p_at_3": 0.3333333333333333,
+        "evaluated": 30
+      }
+    }
+  },
+  "ablation": {
+    "semantic_contribution": 0.0,
+    "hybrid_contribution": 0.0,
+    "enhancement_contribution": 0.0
+  }
+}

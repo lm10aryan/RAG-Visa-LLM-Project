@@ -19,7 +19,7 @@ FACTS: List[Dict[str, object]] = [
     {
         "question": "How many additional H-1B visas exist for advanced degree holders?",
         "category": "cap",
-        "fact": "An additional 20,000 H-1B visas are reserved for beneficiaries who hold a U.S. master's or higher degree.",
+        "fact": "The H-1B cap includes an additional 20,000 H-1B visas reserved for beneficiaries who hold a U.S. master's or higher degree, on top of the regular 65,000 cap.",
         "metadata": {"cap": 20000, "beneficiaries": "US advanced degree"},
         "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
         "source_title": "H-1B Cap Season",
