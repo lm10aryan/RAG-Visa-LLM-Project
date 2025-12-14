@@ -1,52 +1,8 @@
 from __future__ import annotations
 
 import argparse
-import pickle
-from pathlib import Path
-from typing import List
 
-import numpy as np
-
-from src.embeddings.embedder import load_embedding_model
-
-
-class RAGRetriever:
-    def __init__(
-        self,
-        embeddings_path: str = "embeddings.npy",
-        metadata_path: str = "chunks_metadata.pkl",
-    ) -> None:
-        self.embeddings_path = Path(embeddings_path)
-        self.metadata_path = Path(metadata_path)
-        self.model = load_embedding_model()
-        self.embeddings = np.load(self.embeddings_path)
-
-        with self.metadata_path.open("rb") as handle:
-            self.chunks = pickle.load(handle)
-
-        if len(self.chunks) != self.embeddings.shape[0]:
-            raise ValueError(
-                f"Chunks ({len(self.chunks)}) and embeddings ({self.embeddings.shape[0]}) mismatch."
-            )
-
-    def retrieve(self, query: str, top_k: int = 3) -> List[dict]:
-        query_embedding = self.model.encode(
-            [query],
-            convert_to_numpy=True,
-            normalize_embeddings=True,
-            show_progress_bar=False,
-        )[0]
-
-        scores = self.embeddings @ query_embedding
-        top_indices = np.argsort(scores)[::-1][:top_k]
-
-        return [
-            {
-                **self.chunks[idx],
-                "score": float(scores[idx]),
-            }
-            for idx in top_indices
-        ]
+from src.retrieval.semantic_retriever import RAGRetriever
 
 
 def main() -> None:
@@ -65,4 +21,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -5,6 +5,8 @@ import os
 import pickle
 import sys
 from pathlib import Path
+from typing import Dict, List
+from datetime import datetime
 
 import numpy as np
 
@@ -12,10 +14,11 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.append(str(PROJECT_ROOT))
 
-from src.db.facts_builder import create_facts_database  # noqa: E402
+from src.db.facts_builder import FACTS, create_facts_database  # noqa: E402
 from src.embeddings.embedder import generate_embeddings  # noqa: E402
 from src.ingestion.h1b_scraper import scrape_h1b_pages  # noqa: E402
 from src.ingestion.semantic_chunker import chunk_document, save_chunks  # noqa: E402
+from src.utils.chunk_utils import make_chunk_id  # noqa: E402
 
 OFFLINE_HTML_DIR = Path("data/manual/html")
 
@@ -67,6 +70,9 @@ def build_pipeline() -> None:
     for page in pages:
         chunks.extend(chunk_document(page))
 
+    fact_chunks = _fact_reference_chunks(len(chunks))
+    chunks.extend(fact_chunks)
+
     if len(chunks) < 30:
         raise RuntimeError(f"Insufficient chunks: produced {len(chunks)} < 30 target.")
 
@@ -86,6 +92,24 @@ def build_pipeline() -> None:
 
     print(f"✅ Saved {embeddings.shape[0]} embeddings ({embeddings.shape[1]} dimensions)")
     print("🎉 Knowledge base build complete!")
+
+
+def _fact_reference_chunks(start_index: int) -> List[Dict]:
+    fact_chunks: List[Dict] = []
+    for offset, fact in enumerate(FACTS):
+        text = f"{fact['question']} {fact['fact']}"
+        chunk_index = start_index + offset
+        chunk = {
+            "source_url": fact["source_url"],
+            "source_title": fact["source_title"],
+            "text": text,
+            "chunk_index": chunk_index,
+            "chunk_type": "structured_fact",
+            "scraped_at": datetime.utcnow().isoformat(),
+        }
+        chunk["chunk_id"] = make_chunk_id(chunk, chunk_index)
+        fact_chunks.append(chunk)
+    return fact_chunks
 
 
 if __name__ == "__main__":

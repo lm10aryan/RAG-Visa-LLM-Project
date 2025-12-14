@@ -5,6 +5,8 @@ import re
 from pathlib import Path
 from typing import Dict, List
 
+import re
+
 MIN_PARAGRAPH_SIZE = 200
 MAX_PARAGRAPH_SIZE = 800
 H1B_KEYWORDS = ("h-1b", "h1b")
@@ -72,6 +74,13 @@ def _split_long_paragraph(paragraph: str, target_size: int) -> List[str]:
     return chunks
 
 
+def _build_chunk_id(doc: Dict[str, str], chunk_index: int, global_index: int) -> str:
+    url = doc.get("url", "")
+    slug_source = url or doc.get("title", "chunk")
+    slug = re.sub(r"[^a-z0-9]+", "-", slug_source.lower()).strip("-") or "chunk"
+    return f"{slug}-{chunk_index}-{global_index}"
+
+
 def chunk_document(doc: Dict[str, str], target_size: int = 600) -> List[Dict[str, str]]:
     """
     Chunk scraped USCIS pages while preserving semantic boundaries.
@@ -99,6 +108,7 @@ def chunk_document(doc: Dict[str, str], target_size: int = 600) -> List[Dict[str
 
     chunks: List[Dict[str, str]] = []
     chunk_index = 0
+    global_index = 0
     for para in merged_paragraphs:
         for chunk_text in _split_long_paragraph(para, target_size):
             lower_text = chunk_text.lower()
@@ -111,9 +121,12 @@ def chunk_document(doc: Dict[str, str], target_size: int = 600) -> List[Dict[str
                     "source_title": doc.get("title", ""),
                     "text": chunk_text.strip(),
                     "chunk_index": chunk_index,
+                    "chunk_id": _build_chunk_id(doc, chunk_index, global_index),
+                    "scraped_at": doc.get("scraped_at"),
                 }
             )
             chunk_index += 1
+            global_index += 1
 
     return chunks
 
