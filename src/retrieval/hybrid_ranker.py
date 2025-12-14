@@ -4,7 +4,6 @@ from typing import Dict, List
 
 from src.retrieval.bm25_search import BM25Searcher
 from src.retrieval.semantic_retriever import RAGRetriever
-from src.utils.chunk_utils import make_chunk_id
 
 
 class HybridRanker:
@@ -38,8 +37,9 @@ class HybridRanker:
 
         for idx, result in enumerate(results):
             chunk = dict(result)
-            chunk_id = chunk.get("chunk_id") or make_chunk_id(chunk, idx)
-            chunk["chunk_id"] = chunk_id
+            chunk_id = chunk.get("chunk_id")
+            if not chunk_id:
+                raise ValueError(f"Chunk missing chunk_id at index {idx}")
             chunk["semantic_rank"] = idx + 1
             prepared.append(chunk)
 
@@ -109,4 +109,3 @@ class HybridRanker:
 
 
 __all__ = ["HybridRanker"]
-

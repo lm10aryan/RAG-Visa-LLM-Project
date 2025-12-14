@@ -24,8 +24,9 @@ class Reranker:
             reranked.append(chunk)
 
         reranked.sort(key=lambda x: x["final_score"], reverse=True)
-        self._apply_contradiction_penalty(reranked)
-        reranked.sort(key=lambda x: x["final_score"], reverse=True)
+        # Contradiction detection disabled - too aggressive
+        # self._apply_contradiction_penalty(reranked)
+        # reranked.sort(key=lambda x: x["final_score"], reverse=True)
         return reranked
 
     def _simple_rerank(self, results: List[Dict], query: str) -> List[Dict]:
@@ -63,17 +64,17 @@ class Reranker:
     def _authority_score(self, url: str) -> float:
         url = url or ""
         if "uscis.gov" in url:
-            return 0.15
+            return 0.03
         if "state.gov" in url:
-            return 0.1
+            return 0.02
         return 0.0
 
     def _completeness_score(self, text: str) -> float:
         length = len(text or "")
         if length > 600:
-            return 0.1
+            return 0.02
         if length > 400:
-            return 0.05
+            return 0.01
         return 0.0
 
     def _answer_quality_score(self, text: str, query: str) -> float:
@@ -85,15 +86,15 @@ class Reranker:
         for pattern in answer_patterns:
             if pattern.startswith(r"\d+"):
                 if re.search(pattern, text_lower):
-                    bonus += 0.02
+                    bonus += 0.004
             elif pattern.strip() in text_lower:
-                bonus += 0.02
+                bonus += 0.004
 
         for keyword in query_lower.split():
             if keyword and keyword in text_lower:
-                bonus += 0.01
+                bonus += 0.002
 
-        return min(0.05, bonus)
+        return min(0.01, bonus)
 
     def _recency_bonus(self, chunk: Dict) -> float:
         timestamp = chunk.get("scraped_at") or chunk.get("last_updated")
@@ -105,18 +106,18 @@ class Reranker:
             return 0.0
         days_old = (datetime.utcnow() - scraped_time).days
         if days_old <= 30:
-            return 0.1
+            return 0.02
         if days_old <= 180:
-            return 0.05
+            return 0.01
         return 0.0
 
     def _query_alignment_bonus(self, text: str, query_type: str) -> float:
         text_lower = text.lower()
         if query_type == "fact":
-            return 0.05 if re.search(r"\d+", text_lower) else 0.0
+            return 0.01 if re.search(r"\d+", text_lower) else 0.0
         if query_type == "process":
-            return 0.05 if any(word in text_lower for word in ["step", "process", "procedure"]) else 0.0
-        return 0.02 if text_lower else 0.0
+            return 0.01 if any(word in text_lower for word in ["step", "process", "procedure"]) else 0.0
+        return 0.004 if text_lower else 0.0
 
     def _query_weights(self, query_type: str) -> Dict[str, float]:
         if query_type == "fact":

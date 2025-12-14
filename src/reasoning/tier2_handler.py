@@ -36,7 +36,7 @@ class Tier2Handler:
 
         reranked = self.reranker.rerank(
             hybrid_results,
-            question,
+            retrieval_query,
             mode=self.rerank_mode,
         )
         top_results = reranked[: self.max_context]

@@ -6,9 +6,6 @@ from typing import Dict, List
 import numpy as np
 from rank_bm25 import BM25Okapi
 
-from src.utils.chunk_utils import make_chunk_id
-
-
 class BM25Searcher:
     """BM25 keyword search over document chunks."""
 
@@ -21,7 +18,9 @@ class BM25Searcher:
             if not text:
                 continue
             normalized_chunk = dict(chunk)
-            chunk_id = chunk.get("chunk_id") or make_chunk_id(chunk, idx)
+            chunk_id = chunk.get("chunk_id")
+            if not chunk_id:
+                raise ValueError(f"Chunk at index {idx} missing chunk_id")
             normalized_chunk["chunk_id"] = chunk_id
             tokens = self._tokenize(text)
             self.chunks.append(normalized_chunk)
@@ -54,4 +53,3 @@ class BM25Searcher:
 
 
 __all__ = ["BM25Searcher"]
-
