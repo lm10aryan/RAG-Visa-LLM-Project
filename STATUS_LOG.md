@@ -98,3 +98,8 @@ python tests/test_integration.py
 1. Execute `python scripts/run_evaluation.py` to produce full metrics + figures (takes ~30–45 minutes).
 2. Summarize findings (accuracy table, confidence calibration, ablation takeaway) for Day 4 report.
 3. Begin prepping Day 5 write-up/slides/demo based on collected metrics.
+
+## Day 5 — Traceability & Offline Reliability
+- Added a prompt trace CLI (`scripts/run_prompt_trace.py`) that surfaces query enhancement, routing decisions, retrieval fusion, reranker scores, and citation diagnostics for end-to-end debugging.
+- Introduced an offline hashing-based embedding fallback so semantic retrieval continues to work without downloading transformer checkpoints; semantic retriever rebuilds vectors from chunk metadata in this mode.
+- Restored Tier 1 structured-fact routing with stricter thresholds and citation validation to avoid misrouting complex questions and keep fact answers high-confidence.

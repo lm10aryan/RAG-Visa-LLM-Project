@@ -22,22 +22,31 @@ class RAGRetriever:
     ) -> None:
         self.embeddings_path = Path(embeddings_path)
         self.metadata_path = Path(metadata_path)
-        self.model = load_embedding_model()
-        self.embeddings = np.load(self.embeddings_path)
 
         with self.metadata_path.open("rb") as handle:
             self.chunks = pickle.load(handle)
-
-        if len(self.chunks) != self.embeddings.shape[0]:
-            raise ValueError(
-                f"Chunks ({len(self.chunks)}) and embeddings ({self.embeddings.shape[0]}) mismatch."
-            )
 
         self.chunk_ids = []
         for idx, chunk in enumerate(self.chunks):
             chunk_id = chunk.get("chunk_id") or make_chunk_id(chunk, idx)
             chunk["chunk_id"] = chunk_id
             self.chunk_ids.append(chunk_id)
+
+        self.model = load_embedding_model()
+        if getattr(self.model, "is_fallback", False):
+            texts = [chunk.get("text", "") for chunk in self.chunks]
+            self.embeddings = self.model.encode(
+                texts,
+                convert_to_numpy=True,
+                normalize_embeddings=True,
+                show_progress_bar=False,
+            )
+        else:
+            self.embeddings = np.load(self.embeddings_path)
+            if len(self.chunks) != self.embeddings.shape[0]:
+                raise ValueError(
+                    f"Chunks ({len(self.chunks)}) and embeddings ({self.embeddings.shape[0]}) mismatch."
+                )
 
     def retrieve(self, query: str, top_k: int = 3) -> List[dict]:
         query_embedding = self.model.encode(

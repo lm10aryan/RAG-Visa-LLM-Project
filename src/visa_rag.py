@@ -43,11 +43,33 @@ class VisaRAG:
         self.validate_citations = validate_citations
         self.citation_validator = CitationValidator()
 
-    def query(self, question: str, enhance: bool = True) -> Dict:
-        if enhance and self.enhancement_mode != "off":
-            enhanced_query = self.query_enhancer.enhance(question, mode=self.enhancement_mode)
-        else:
-            enhanced_query = question
+    def query(
+        self, question: str, enhance: bool = True, enhanced_query: Optional[str] = None
+    ) -> Dict:
+        if enhanced_query is None:
+            if enhance and self.enhancement_mode != "off":
+                enhanced_query = self.query_enhancer.enhance(
+                    question, mode=self.enhancement_mode
+                )
+            else:
+                enhanced_query = question
+
+        tier1_result = self.tier1.handle(question)
+        if tier1_result:
+            tier1_result["query_enhanced"] = enhanced_query != question
+            tier1_result["enhanced_query"] = enhanced_query
+            if self.validate_citations and tier1_result.get("sources"):
+                validated_sources = self.citation_validator.validate_sources(
+                    tier1_result["sources"]
+                )
+                tier1_result["sources"] = validated_sources
+                tier1_result["citation_quality"] = self.citation_validator.get_citation_quality_score(
+                    validated_sources
+                )
+
+            routing_info = {"tier": 1, "reason": "structured_fact_match"}
+            self._log_query(question, tier1_result, routing_info)
+            return tier1_result
 
         tier2_result = self.tier2.handle(question, enhanced_query=enhanced_query) or {
             "tier": 2,
@@ -67,7 +89,7 @@ class VisaRAG:
                 validated_sources
             )
 
-        routing_info = {"tier": 2, "reason": "tier1_disabled"}
+        routing_info = {"tier": 2, "reason": "tier1_no_match"}
         self._log_query(question, tier2_result, routing_info)
         return tier2_result
 
