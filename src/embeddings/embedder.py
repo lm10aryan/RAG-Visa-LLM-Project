@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from functools import lru_cache
+import hashlib
 import logging
 import re
 from typing import List, Sequence, Union
@@ -40,7 +41,9 @@ class HashingSentenceTransformer:
 
         for row, sentence in enumerate(sentences):
             for token in self._tokenize(sentence):
-                vectors[row, hash(token) % self.dimension] += 1.0
+                digest = hashlib.blake2b(token.encode("utf-8"), digest_size=8).digest()
+                bucket = int.from_bytes(digest, "big") % self.dimension
+                vectors[row, bucket] += 1.0
 
         if normalize_embeddings:
             norms = np.linalg.norm(vectors, axis=1, keepdims=True)
