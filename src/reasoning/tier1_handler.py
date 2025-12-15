@@ -62,7 +62,7 @@ class Tier1Handler:
                 best = fact
                 best_score = score
 
-        threshold = 0.35
+        threshold = 0.5
         if best_score < threshold:
             return None, best_score
         return best, best_score
