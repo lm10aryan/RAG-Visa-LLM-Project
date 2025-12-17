@@ -1,0 +1,896 @@
+{
+  "timestamp": "2025-12-17T20:32:24.158661",
+  "variants": {
+    "baseline": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "The H-1B cap refers to the annual limit on the number of new H-1B visas that can be issued to foreign workers in specialty occupations. The cap is set by the U.S. Citizenship and Immigration Services (USCIS) and is currently set at 85,000 visas per fiscal year. This includes:\n\n- 65,000 visas for workers with a bachelor's degree or higher in a specialty occupation\n- 20,000 visas for workers who have earned a master's degree or higher from a U.S. institution in a specialty occupation\n\nThe H-1B cap is typically filled through a random lottery system, also known as the H-1B cap lottery or the H-1B visa lottery, which is conducted by USCIS. This means that if the number of applicants exceeds the cap, USCIS randomly selects the petitions that will be approved.",
+          "correct": true,
+          "response_time": 0.6157870292663574,
+          "sources": [],
+          "confidence_level": null,
+          "confidence": null,
+          "citation_quality": null,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "The H-1B filing fee consists of several components. \n\n1. **Filing Fee for the H-1B Petition**: The base filing fee for the H-1B petition is $320. This fee is paid to U.S. Citizenship and Immigration Services (USCIS).\n\n2. **American Competitiveness and Workforce Improvement Act (ACWIA) Fee**: This fee is $750 for small businesses (fewer than 50 employees) and $1,500 for large businesses (50 or more employees).\n\n3. **Public Law 114-113 Fee**: This fee is $4,000 for employers with 26 or more full-time employees in the United States.\n\n4. **Premium Processing Fee**: This fee is optional and costs $1,410. It allows for expedited processing of the H-1B petition.\n\n5. **Fraud Prevention and Detection Fee**: This fee is $500.\n\n6. **H-1B Cap Registration Fee**: This fee is $10 for the initial registration and $10 for the selection process.\n\n7. **Attorney Fees**: These fees vary depending on the attorney and the complexity of the case.\n\nThe total H-1B filing fee can range from $2,320 (",
+          "correct": false,
+          "response_time": 0.5109350681304932,
+          "sources": [],
+          "confidence_level": null,
+          "confidence": null,
+          "citation_quality": null,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5,
+      "avg_response_time": 0.5633610486984253,
+      "by_category": {
+        "fact": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        }
+      }
+    },
+    "semantic_only": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "The regular H-1B statutory cap authorizes 65,000 new visas each fiscal year.",
+          "correct": false,
+          "response_time": 0.39847683906555176,
+          "sources": [
+            {
+              "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "source_title": "H-1B Cap Season",
+              "text": "What is the regular H-1B statutory cap? The regular H-1B statutory cap authorizes 65,000 new visas each fiscal year.",
+              "chunk_index": 94,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.412687",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-94-94",
+              "score": 0.5805330276489258
+            },
+            {
+              "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "source_title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "text": "A cap-subject H-1B petition will not be considered to be properly filed unless it is based on a valid, selected registration for the same beneficiary and the appropriate fiscal year, unless the registration requirement is suspended. Once the petitioner properly and timely files a request to change status to H-1B within the fiscal year for which such status is being requested, the automatic cap-gap extension will begin.",
+              "chunk_index": 5,
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-5-5",
+              "scraped_at": "2025-12-14T21:48:11.913238",
+              "score": 0.5578217506408691
+            },
+            {
+              "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "source_title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "text": "Cap-subject H-1B petitions that are properly and timely filed for an eligible F-1 student that request a change of status to H-1B within the fiscal year for which status is being requested qualify for a cap-gap extension.",
+              "chunk_index": 3,
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-3-3",
+              "scraped_at": "2025-12-14T21:48:11.913238",
+              "score": 0.556352972984314
+            }
+          ],
+          "confidence_level": null,
+          "confidence": null,
+          "citation_quality": 0.0,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "Based on the provided context, the total H-1B filing fee consists of multiple components:\n\n1. Base filing fee for Form I-129: $460\n2. ACWIA fee (dependent on company size):\n   - Small companies (1-25 employees): $750\n   - Large companies (26 or more employees): $1,500\n3. Fraud Prevention and Detection fee (for initial H-1B petitions): $500\n4. H-1B registration fee per beneficiary: $10\n\nTo calculate the total H-1B filing fee, you need to add these components together. However, the context does not specify whether the ACWIA fee and Fraud Prevention and Detection fee are mandatory for all petitions or only for specific cases. \n\nAssuming these fees are mandatory for initial H-1B petitions, the total filing fee would be:\n\n- Small companies: $460 (base) + $750 (ACWIA) + $500 (Fraud Prevention and Detection) + $10 (registration) = $1,720\n- Large companies: $460 (base) + $1,500 (ACWIA) + $500 (Fraud Prevention and Detection) + $10 (registration) = $2,470",
+          "correct": true,
+          "response_time": 0.5616490840911865,
+          "sources": [
+            {
+              "source_url": "https://www.uscis.gov/forms/filing-fees",
+              "source_title": "Filing Fees",
+              "text": "What is the base filing fee for Form I-129 (H-1B)? The base filing fee for Form I-129 is $460 for H-1B petitions.",
+              "chunk_index": 108,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.413135",
+              "chunk_id": "forms-filing-fees-108-108",
+              "score": 0.7843632698059082
+            },
+            {
+              "source_url": "https://www.uscis.gov/forms/filing-fees",
+              "source_title": "Filing Fees",
+              "text": "How much does filing an H-1B petition cost? Most employers pay the $460 base filing fee, the ACWIA fee of $750 or $1,500 depending on company size, and the $500 Fraud Prevention and Detection fee for initial H-1B petitions.",
+              "chunk_index": 109,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.413160",
+              "chunk_id": "forms-filing-fees-109-109",
+              "score": 0.7427974939346313
+            },
+            {
+              "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "source_title": "H-1B Cap Season",
+              "text": "What is the H-1B registration fee per beneficiary? Each H-1B registration submission requires a non-refundable $10 fee per beneficiary.",
+              "chunk_index": 97,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.412855",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-97-97",
+              "score": 0.6792747974395752
+            }
+          ],
+          "confidence_level": null,
+          "confidence": null,
+          "citation_quality": 0.0,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5,
+      "avg_response_time": 0.48006296157836914,
+      "by_category": {
+        "fact": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        }
+      }
+    },
+    "bm25_only": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "Based on the provided context, there are two types of H-1B caps mentioned:\n\n1. The regular H-1B statutory cap: This cap authorizes 65,000 new visas each fiscal year.\n2. The H-1B cap exemption: Certain institutions, such as institutions of higher education, related nonprofit entities, and government research organizations, are exempt from this cap.\n\nIt's worth noting that the cap-gap extension mentioned in the first source is related to the H-1B cap, but it's not a cap itself. It's an extension that can be applied to eligible F-1 students requesting a change of status.",
+          "correct": false,
+          "response_time": 0.2811911106109619,
+          "sources": [
+            {
+              "source_url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "source_title": "Cap-Gap Extension Guidance",
+              "text": "When can an H-1B cap-gap extension apply? Cap-subject H-1B petitions properly and timely filed for an eligible F-1 student requesting a change of status qualify for a cap-gap extension.",
+              "chunk_index": 115,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.413284",
+              "chunk_id": "working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-115-115",
+              "bm25_score": 2.551502632515085
+            },
+            {
+              "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+              "source_title": "H-1B Specialty Occupations",
+              "text": "Who qualifies for H-1B cap exemption? Institutions of higher education, related nonprofit entities, and government research organizations are cap-exempt.",
+              "chunk_index": 105,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.413054",
+              "chunk_id": "working-in-the-united-states-h-1b-specialty-occupations-105-105",
+              "bm25_score": 2.4591124978578405
+            },
+            {
+              "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "source_title": "H-1B Cap Season",
+              "text": "What is the regular H-1B statutory cap? The regular H-1B statutory cap authorizes 65,000 new visas each fiscal year.",
+              "chunk_index": 94,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.412687",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-94-94",
+              "bm25_score": 2.4225389972628837
+            }
+          ],
+          "confidence_level": null,
+          "confidence": null,
+          "citation_quality": 0.0,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "Based on the provided context, the total H-1B filing fee consists of multiple components. \n\nThe base filing fee for Form I-129 (H-1B) is $460 (Source 2). \n\nAdditionally, employers must pay the ACWIA fee, which is $750 for companies with 25 or fewer full-time equivalent employees and $1,500 for companies with 26 or more full-time equivalent employees (Source 1). \n\nLastly, there's a $500 Fraud Prevention and Detection fee for initial H-1B petitions (Source 1).\n\nThe H-1B registration fee per beneficiary is $10 (Source 3), but this fee is not directly related to the petition filing fee.\n\nTherefore, the total H-1B filing fee would be the sum of the base filing fee, ACWIA fee, and Fraud Prevention and Detection fee, which is $460 + $750 (or $1,500) + $500 = $1,710 (or $2,660).",
+          "correct": true,
+          "response_time": 0.48256707191467285,
+          "sources": [
+            {
+              "source_url": "https://www.uscis.gov/forms/filing-fees",
+              "source_title": "Filing Fees",
+              "text": "How much does filing an H-1B petition cost? Most employers pay the $460 base filing fee, the ACWIA fee of $750 or $1,500 depending on company size, and the $500 Fraud Prevention and Detection fee for initial H-1B petitions.",
+              "chunk_index": 109,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.413160",
+              "chunk_id": "forms-filing-fees-109-109",
+              "bm25_score": 13.03917804949999
+            },
+            {
+              "source_url": "https://www.uscis.gov/forms/filing-fees",
+              "source_title": "Filing Fees",
+              "text": "What is the base filing fee for Form I-129 (H-1B)? The base filing fee for Form I-129 is $460 for H-1B petitions.",
+              "chunk_index": 108,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.413135",
+              "chunk_id": "forms-filing-fees-108-108",
+              "bm25_score": 9.067881809234422
+            },
+            {
+              "source_url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "source_title": "H-1B Cap Season",
+              "text": "What is the H-1B registration fee per beneficiary? Each H-1B registration submission requires a non-refundable $10 fee per beneficiary.",
+              "chunk_index": 97,
+              "chunk_type": "structured_fact",
+              "scraped_at": "2025-12-14T21:48:14.412855",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-97-97",
+              "bm25_score": 4.643791002535517
+            }
+          ],
+          "confidence_level": null,
+          "confidence": null,
+          "citation_quality": 0.0,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 1,
+      "total": 2,
+      "accuracy": 0.5,
+      "avg_response_time": 0.3818790912628174,
+      "by_category": {
+        "fact": {
+          "correct": 1,
+          "total": 2,
+          "accuracy": 0.5
+        }
+      }
+    },
+    "hybrid": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "The regular H-1B statutory cap authorizes 65,000 new visas each fiscal year. Additionally, there are 20,000 more H-1B visas reserved for beneficiaries who hold a U.S. master's or higher degree, making the total cap 85,000.",
+          "correct": true,
+          "response_time": 0.31858396530151367,
+          "sources": [
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.049,
+              "text": "A cap-subject H-1B petition will not be considered to be properly filed unless it is based on a valid, selected registration for the same beneficiary and the appropriate fiscal year, unless the registration requirement is suspended. Once the petitioner properly and timely files a request to change status to H-1B within the fiscal year for which such status is being requested, the automatic cap-gap extension will begin.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-5-5",
+              "scraped_at": "2025-12-14T21:48:11.913238"
+            },
+            {
+              "title": "H-1B Cap Season",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "relevance": 0.049,
+              "text": "What is the regular H-1B statutory cap? The regular H-1B statutory cap authorizes 65,000 new visas each fiscal year.",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-94-94",
+              "scraped_at": "2025-12-14T21:48:14.412687"
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.049,
+              "text": "They then need to apply for an H-1B visa at a consular post abroad, if applicable, and seek to be readmitted into the United States in H-1B status for the dates reflected on the approved H-1B petition. Additionally, the cap-gap provision applies only to beneficiaries of cap-subject H-1B petitions, not to beneficiaries of cap-exempt H-1B petitions . The cap-gap extension of OPT is automatic for eligible students. A student does not file an application for the extension or receive a new Employment Authorization Document (EAD) to cover the additional time.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-10-10",
+              "scraped_at": "2025-12-14T21:48:11.913238"
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.049,
+              "text": "1, but the beneficiary\u2019s OPT employment authorization may expire before the H-1B start date. Current regulations allow certain students with a pending or approved cap-subject H-1B petition to remain in F-1 status during the cap-gap period. This is referred to as filling the \"cap-gap,\" meaning the regulations provide a way of filling the \"gap\" between the end of F-1 status and the beginning of H-1B status that might otherwise occur were F-1 status not extended for qualifying students.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-2-2",
+              "scraped_at": "2025-12-14T21:48:11.913238"
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.048,
+              "text": "Cap-gap occurs because an employer may not file, and USCIS may not accept, a cap subject H-1B petition submitted more than 6 months in advance of the date of actual need for the beneficiary\u2019s services or training. As a result, the earliest date that an employer can file an H-1B cap-subject petition is April 1 for the following fiscal year, which starts Oct. 1. If USCIS approves the H-1B petition and the accompanying change of status request, the earliest date that the student may start the approved H-1B employment is Oct.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-1-1",
+              "scraped_at": "2025-12-14T21:48:11.913238"
+            },
+            {
+              "title": "H-1B Specialty Occupations",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+              "relevance": 0.048,
+              "text": "Who qualifies for H-1B cap exemption? Institutions of higher education, related nonprofit entities, and government research organizations are cap-exempt.",
+              "chunk_id": "working-in-the-united-states-h-1b-specialty-occupations-105-105",
+              "scraped_at": "2025-12-14T21:48:14.413054"
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.048,
+              "text": "Cap-subject H-1B petitions that are properly and timely filed for an eligible F-1 student that request a change of status to H-1B within the fiscal year for which status is being requested qualify for a cap-gap extension.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-3-3",
+              "scraped_at": "2025-12-14T21:48:11.913238"
+            },
+            {
+              "title": "Cap-Gap Extension Guidance",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.047,
+              "text": "When can an H-1B cap-gap extension apply? Cap-subject H-1B petitions properly and timely filed for an eligible F-1 student requesting a change of status qualify for a cap-gap extension.",
+              "chunk_id": "working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-115-115",
+              "scraped_at": "2025-12-14T21:48:14.413284"
+            },
+            {
+              "title": "H-1B Cap Season",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "relevance": 0.046,
+              "text": "How many additional H-1B visas exist for advanced degree holders? The H-1B cap includes an additional 20,000 H-1B visas reserved for beneficiaries who hold a U.S. master's or higher degree, on top of the regular 65,000 cap.",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-95-95",
+              "scraped_at": "2025-12-14T21:48:14.412804"
+            },
+            {
+              "title": "H-1B Cap Season",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "relevance": 0.046,
+              "text": "Do I need to register before filing a cap-subject H-1B petition? Cap-subject petitioners must submit an electronic registration and be selected before filing an H-1B petition.",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-96-96",
+              "scraped_at": "2025-12-14T21:48:14.412830"
+            }
+          ],
+          "confidence_level": "low",
+          "confidence": 0.59,
+          "citation_quality": null,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "The base filing fee for Form I-129 (H-1B) is $460. However, additional fees may apply, including:\n\n- ACWIA fee: $750 for employers with 25 or fewer full-time employees, or $1,500 for employers with 26 or more full-time employees.\n- Fraud Prevention and Detection fee: $500 for initial H-1B petitions.\n- Pub. L. 114-113 fee: $4,000 for certain employers with 50 or more employees, with more than half in H-1B or L-1 status.\n\nAdditionally, there is a non-refundable $10 fee per beneficiary for H-1B registration submissions.\n\nThe total fee may vary depending on the employer's size and the specific circumstances of the petition.",
+          "correct": true,
+          "response_time": 0.40725016593933105,
+          "sources": [
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.05,
+              "text": "What is the base filing fee for Form I-129 (H-1B)? The base filing fee for Form I-129 is $460 for H-1B petitions.",
+              "chunk_id": "forms-filing-fees-108-108",
+              "scraped_at": "2025-12-14T21:48:14.413135"
+            },
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.05,
+              "text": "How much does filing an H-1B petition cost? Most employers pay the $460 base filing fee, the ACWIA fee of $750 or $1,500 depending on company size, and the $500 Fraud Prevention and Detection fee for initial H-1B petitions.",
+              "chunk_id": "forms-filing-fees-109-109",
+              "scraped_at": "2025-12-14T21:48:14.413160"
+            },
+            {
+              "title": "H-1B Cap Season",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "relevance": 0.049,
+              "text": "What is the H-1B registration fee per beneficiary? Each H-1B registration submission requires a non-refundable $10 fee per beneficiary.",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-97-97",
+              "scraped_at": "2025-12-14T21:48:14.412855"
+            },
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.048,
+              "text": "What is the ACWIA fee for H-1B petitions? The American Competitiveness and Workforce Improvement Act (ACWIA) fee is $1,500 for employers with 26 or more full-time employees, or $750 for 25 or fewer.",
+              "chunk_id": "forms-filing-fees-110-110",
+              "scraped_at": "2025-12-14T21:48:14.413179"
+            },
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.048,
+              "text": "Do H-1B petitions require a fraud prevention fee? Most initial H-1B petitions require the $500 Fraud Prevention and Detection fee.",
+              "chunk_id": "forms-filing-fees-111-111",
+              "scraped_at": "2025-12-14T21:48:14.413197"
+            },
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.047,
+              "text": "When is the $4,000 Pub. L. 114-113 fee required? Certain employers with 50 or more employees, with more than half in H-1B or L-1 status, must pay an additional $4,000 Pub. L. 114-113 fee.",
+              "chunk_id": "forms-filing-fees-112-112",
+              "scraped_at": "2025-12-14T21:48:14.413218"
+            },
+            {
+              "title": "Filing Fees | USCIS",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.047,
+              "text": "There is a daily transaction limit for credit cards of $24,999.99 per credit card per day set by the Department of the Treasury. We allow an exemption to this limit of up to $99,999.99 for H-1B registrations and petitions submitted online using 1 credit card. Security\nWe use the U.S. Department of the Treasury\u2019s Pay.gov Trusted Collections Service to process credit card and ACH payments. Trusted Collections Service is a web-based application that allows government agencies to process electronic payments. You cannot pay the fee directly to Pay.gov.",
+              "chunk_id": "https-www-uscis-gov-forms-filing-fees-1-1",
+              "scraped_at": "2025-12-14T21:48:13.153301"
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.046,
+              "text": "Timely filed means that the H-1B petition (indicating change of status rather than consular processing) was filed during the applicable H-1B filing period, which begins April 1 and while the student's authorized F-1 duration of status (D/S) admission was still in effect (including any period of time during the academic course of study, any authorized periods of post-completion optional practical training (OPT), and the 60-day departure preparation period commonly known as the \"grace period\").",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-4-4",
+              "scraped_at": "2025-12-14T21:48:11.913238"
+            },
+            {
+              "title": "Employment Authorization for Certain H-4 Dependent Spouses | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/employment-authorization-for-certain-h-4-dependent-spouses",
+              "relevance": 0.046,
+              "text": "Based on Filing of a Permanent Labor Certification Application. Submit evidence that the H-1B nonimmigrant is the beneficiary of a Permanent Labor Certification Application that was filed at least 365 days before the period of admission authorized under AC21 106(a) and (b) begins. You may show this by submitting a copy of a print out from the Department of Labor\u2019s (DOL\u2019s) website or other correspondence from DOL showing the status of the H-1B nonimmigrant\u2019s Permanent Labor Certification Application.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-employment-authorization-for-certain-h-4-dependent-spouses-5-5",
+              "scraped_at": "2025-12-14T21:48:10.603268"
+            },
+            {
+              "title": "FAQs for Individuals in H-1B Nonimmigrant Status | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/faqs-for-individuals-in-h-1b-nonimmigrant-status",
+              "relevance": 0.044,
+              "text": "In this case, your EAD will indicate \u201cNOT VALID FOR REENTRY TO U.S.\u201d and your Advance Parole Document will be issued separately. Q. I am an foreign student on an F-1 visa, currently in a period of optional practical training (OPT). Do I need to obtain H-1B status for my employer to file an immigrant petition on my behalf? A. As an F-1 student on OPT, you do not have to obtain H-1B status before an immigrant petition is filed on your behalf.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-faqs-for-individuals-in-h-1b-nonimmigrant-status-30-30",
+              "scraped_at": "2025-12-14T21:48:09.389800"
+            }
+          ],
+          "confidence_level": "low",
+          "confidence": 0.59,
+          "citation_quality": null,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "avg_response_time": 0.36291706562042236,
+      "by_category": {
+        "fact": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "enhanced": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "The regular H-1B statutory cap authorizes 65,000 new visas each fiscal year. Additionally, there are 20,000 more visas reserved for beneficiaries who hold a U.S. master's or higher degree.",
+          "correct": true,
+          "response_time": 0.3111398220062256,
+          "sources": [
+            {
+              "title": "FAQs for Individuals in H-1B Nonimmigrant Status | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/faqs-for-individuals-in-h-1b-nonimmigrant-status",
+              "relevance": 0.051,
+              "text": "Among other provisions, this rule revises the definition of and criteria for specialty occupation positions to codify current practice; codifies the deference policy under which adjudicators generally should defer to a prior determination when no underlying facts have changed; modernizes H-1B cap exemptions; extends \u201ccap-gap\u201d protections for F-1 students changing status to H-1B; codifies H-1B eligibility for beneficiary owners; and implements a number of integrity measures pertaining to site visits and third-party placements.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-faqs-for-individuals-in-h-1b-nonimmigrant-status-55-55",
+              "scraped_at": "2025-12-14T21:48:09.389800",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Employment Authorization for Certain H-4 Dependent Spouses | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/employment-authorization-for-certain-h-4-dependent-spouses",
+              "relevance": 0.05,
+              "text": "businesses use the H-1B program to employ foreign workers in specialty occupations that require a bachelor\u2019s or higher degree in a specific specialty that is directly related to the H-1B position. In addition to specialty occupation workers, the H-1B classification applies to individuals performing services related to a Department of Defense cooperative research and development project or coproduction project, and to individuals performing services of distinguished merit and ability in the field of fashion modeling.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-employment-authorization-for-certain-h-4-dependent-spouses-1-1",
+              "scraped_at": "2025-12-14T21:48:10.603268",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "H-1B Cap Season",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "relevance": 0.049,
+              "text": "What is the regular H-1B statutory cap? The regular H-1B statutory cap authorizes 65,000 new visas each fiscal year.",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-94-94",
+              "scraped_at": "2025-12-14T21:48:14.412687",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.048,
+              "text": "1, but the beneficiary\u2019s OPT employment authorization may expire before the H-1B start date. Current regulations allow certain students with a pending or approved cap-subject H-1B petition to remain in F-1 status during the cap-gap period. This is referred to as filling the \"cap-gap,\" meaning the regulations provide a way of filling the \"gap\" between the end of F-1 status and the beginning of H-1B status that might otherwise occur were F-1 status not extended for qualifying students.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-2-2",
+              "scraped_at": "2025-12-14T21:48:11.913238",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "H-1B Specialty Occupations",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+              "relevance": 0.048,
+              "text": "What education level is required for H-1B specialty occupations? H-1B classification is for specialty occupations that require a bachelor's degree or higher in a specific specialty.",
+              "chunk_id": "working-in-the-united-states-h-1b-specialty-occupations-102-102",
+              "scraped_at": "2025-12-14T21:48:14.412981",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.048,
+              "text": "A cap-subject H-1B petition will not be considered to be properly filed unless it is based on a valid, selected registration for the same beneficiary and the appropriate fiscal year, unless the registration requirement is suspended. Once the petitioner properly and timely files a request to change status to H-1B within the fiscal year for which such status is being requested, the automatic cap-gap extension will begin.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-5-5",
+              "scraped_at": "2025-12-14T21:48:11.913238",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.047,
+              "text": "They then need to apply for an H-1B visa at a consular post abroad, if applicable, and seek to be readmitted into the United States in H-1B status for the dates reflected on the approved H-1B petition. Additionally, the cap-gap provision applies only to beneficiaries of cap-subject H-1B petitions, not to beneficiaries of cap-exempt H-1B petitions . The cap-gap extension of OPT is automatic for eligible students. A student does not file an application for the extension or receive a new Employment Authorization Document (EAD) to cover the additional time.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-10-10",
+              "scraped_at": "2025-12-14T21:48:11.913238",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "H-1B Specialty Occupations",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+              "relevance": 0.047,
+              "text": "Who qualifies for H-1B cap exemption? Institutions of higher education, related nonprofit entities, and government research organizations are cap-exempt.",
+              "chunk_id": "working-in-the-united-states-h-1b-specialty-occupations-105-105",
+              "scraped_at": "2025-12-14T21:48:14.413054",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Extension of Post Completion Optional Practical Training (OPT) and F-1 Status for Eligible Students under the H-1B Cap-Gap Regulations | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students",
+              "relevance": 0.046,
+              "text": "Cap-subject H-1B petitions that are properly and timely filed for an eligible F-1 student that request a change of status to H-1B within the fiscal year for which status is being requested qualify for a cap-gap extension.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-extension-of-post-completion-optional-practical-training-opt-and-f-1-status-for-eligible-students-3-3",
+              "scraped_at": "2025-12-14T21:48:11.913238",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "H-1B Cap Season",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "relevance": 0.046,
+              "text": "How many additional H-1B visas exist for advanced degree holders? The H-1B cap includes an additional 20,000 H-1B visas reserved for beneficiaries who hold a U.S. master's or higher degree, on top of the regular 65,000 cap.",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-95-95",
+              "scraped_at": "2025-12-14T21:48:14.412804",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            }
+          ],
+          "confidence_level": "low",
+          "confidence": 0.59,
+          "citation_quality": 1.0,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "response": "The H-1B filing fee consists of multiple components. \n\nThe base filing fee for Form I-129 is $460. \n\nIn addition to the base filing fee, the following fees may be applicable:\n\n- The American Competitiveness and Workforce Improvement Act (ACWIA) fee, which is $1,500 for employers with 26 or more full-time employees, or $750 for 25 or fewer.\n- The $500 Fraud Prevention and Detection fee for initial H-1B petitions.\n- The $4,000 Pub. L. 114-113 fee for certain employers with 50 or more employees, with more than half in H-1B or L-1 status.\n\nThe total H-1B filing fee can vary depending on the employer's size and the specific circumstances of the petition.",
+          "correct": true,
+          "response_time": 0.49777913093566895,
+          "sources": [
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.05,
+              "text": "What is the base filing fee for Form I-129 (H-1B)? The base filing fee for Form I-129 is $460 for H-1B petitions.",
+              "chunk_id": "forms-filing-fees-108-108",
+              "scraped_at": "2025-12-14T21:48:14.413135",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.05,
+              "text": "How much does filing an H-1B petition cost? Most employers pay the $460 base filing fee, the ACWIA fee of $750 or $1,500 depending on company size, and the $500 Fraud Prevention and Detection fee for initial H-1B petitions.",
+              "chunk_id": "forms-filing-fees-109-109",
+              "scraped_at": "2025-12-14T21:48:14.413160",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Employment Authorization for Certain H-4 Dependent Spouses | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/employment-authorization-for-certain-h-4-dependent-spouses",
+              "relevance": 0.049,
+              "text": "businesses use the H-1B program to employ foreign workers in specialty occupations that require a bachelor\u2019s or higher degree in a specific specialty that is directly related to the H-1B position. In addition to specialty occupation workers, the H-1B classification applies to individuals performing services related to a Department of Defense cooperative research and development project or coproduction project, and to individuals performing services of distinguished merit and ability in the field of fashion modeling.",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-employment-authorization-for-certain-h-4-dependent-spouses-1-1",
+              "scraped_at": "2025-12-14T21:48:10.603268",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "H-1B Cap Season",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-cap-season",
+              "relevance": 0.049,
+              "text": "What is the H-1B registration fee per beneficiary? Each H-1B registration submission requires a non-refundable $10 fee per beneficiary.",
+              "chunk_id": "working-in-the-united-states-h-1b-cap-season-97-97",
+              "scraped_at": "2025-12-14T21:48:14.412855",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.048,
+              "text": "What is the ACWIA fee for H-1B petitions? The American Competitiveness and Workforce Improvement Act (ACWIA) fee is $1,500 for employers with 26 or more full-time employees, or $750 for 25 or fewer.",
+              "chunk_id": "forms-filing-fees-110-110",
+              "scraped_at": "2025-12-14T21:48:14.413179",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.048,
+              "text": "Do H-1B petitions require a fraud prevention fee? Most initial H-1B petitions require the $500 Fraud Prevention and Detection fee.",
+              "chunk_id": "forms-filing-fees-111-111",
+              "scraped_at": "2025-12-14T21:48:14.413197",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Filing Fees",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.047,
+              "text": "When is the $4,000 Pub. L. 114-113 fee required? Certain employers with 50 or more employees, with more than half in H-1B or L-1 status, must pay an additional $4,000 Pub. L. 114-113 fee.",
+              "chunk_id": "forms-filing-fees-112-112",
+              "scraped_at": "2025-12-14T21:48:14.413218",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "H-1B Specialty Occupations",
+              "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+              "relevance": 0.046,
+              "text": "What education level is required for H-1B specialty occupations? H-1B classification is for specialty occupations that require a bachelor's degree or higher in a specific specialty.",
+              "chunk_id": "working-in-the-united-states-h-1b-specialty-occupations-102-102",
+              "scraped_at": "2025-12-14T21:48:14.412981",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "Filing Fees | USCIS",
+              "url": "https://www.uscis.gov/forms/filing-fees",
+              "relevance": 0.046,
+              "text": "There is a daily transaction limit for credit cards of $24,999.99 per credit card per day set by the Department of the Treasury. We allow an exemption to this limit of up to $99,999.99 for H-1B registrations and petitions submitted online using 1 credit card. Security\nWe use the U.S. Department of the Treasury\u2019s Pay.gov Trusted Collections Service to process credit card and ACH payments. Trusted Collections Service is a web-based application that allows government agencies to process electronic payments. You cannot pay the fee directly to Pay.gov.",
+              "chunk_id": "https-www-uscis-gov-forms-filing-fees-1-1",
+              "scraped_at": "2025-12-14T21:48:13.153301",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            },
+            {
+              "title": "FAQs for Individuals in H-1B Nonimmigrant Status | USCIS",
+              "url": "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations/faqs-for-individuals-in-h-1b-nonimmigrant-status",
+              "relevance": 0.046,
+              "text": "We will keep working within our legal authority to provide as much flexibility, predictability, and dignity as possible for all those waiting for their chance to become a lawful permanent resident and ultimately a U.S. citizen. H-1B Specialty Occupations\nEmployment-Based Adjustment of Status FAQs\nEmployment Authorization for Certain H-4 Dependent Spouses .",
+              "chunk_id": "https-www-uscis-gov-working-in-the-united-states-temporary-workers-h-1b-specialty-occupations-faqs-for-individuals-in-h-1b-nonimmigrant-status-57-57",
+              "scraped_at": "2025-12-14T21:48:09.389800",
+              "validation": {
+                "accessible": true,
+                "freshness": "recent"
+              }
+            }
+          ],
+          "confidence_level": "low",
+          "confidence": 0.59,
+          "citation_quality": 1.0,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 2,
+      "total": 2,
+      "accuracy": 1.0,
+      "avg_response_time": 0.40445947647094727,
+      "by_category": {
+        "fact": {
+          "correct": 2,
+          "total": 2,
+          "accuracy": 1.0
+        }
+      }
+    }
+  }
+}

@@ -46,7 +46,7 @@ class Evaluator:
             "enhanced": self._enhanced_variant,
         }
 
-    def run_evaluation(self, variants: List[str]) -> Dict:
+    def run_evaluation(self, variants: List[str], max_questions: int | None = None) -> Dict:
         results = {
             "timestamp": datetime.utcnow().isoformat(),
             "variants": {},
@@ -56,10 +56,10 @@ class Evaluator:
             if name not in self.variant_map:
                 raise ValueError(f"Unknown variant: {name}")
             print(f"\n▶️  Evaluating variant: {name}")
-            results["variants"][name] = self._run_variant(name, self.variant_map[name])
+            results["variants"][name] = self._run_variant(name, self.variant_map[name], max_questions)
         return results
 
-    def _run_variant(self, name: str, runner: Callable[[str, Dict], Dict]) -> Dict:
+    def _run_variant(self, name: str, runner: Callable[[str, Dict], Dict], max_questions: int | None) -> Dict:
         variant_results = {
             "questions": [],
             "correct": 0,
@@ -70,7 +70,9 @@ class Evaluator:
         }
         total_time = 0.0
 
-        for idx, test_q in enumerate(self.test_questions, 1):
+        questions = self.test_questions[:max_questions] if max_questions else self.test_questions
+
+        for idx, test_q in enumerate(questions, 1):
             question = test_q["question"]
             ground_truth = test_q["ground_truth"]
             print(f"   [{idx}/{len(self.test_questions)}] {question}")
@@ -98,6 +100,10 @@ class Evaluator:
             total_time += elapsed
 
             answer_text = response.get("answer", response) if isinstance(response, dict) else response
+            preview = (answer_text or "").strip().replace("\n", " ")
+            if preview:
+                print(f"      ↪︎ Answer preview: {preview[:120]}" + ("…" if len(preview) > 120 else ""))
+
             is_correct = self._check_correctness(answer_text, ground_truth)
 
             entry = {

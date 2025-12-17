@@ -1,0 +1,3720 @@
+{
+  "timestamp": "2025-12-15T01:56:53.885403",
+  "variants": {
+    "baseline": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the ACWIA fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The ACWIA fee is $750 for employers with 25 or fewer workers and $1,500 for employers with 26 or more.",
+            "key_facts": [
+              "750",
+              "1,500"
+            ],
+            "must_include": [
+              "750",
+              "1,500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the premium processing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Premium processing currently costs $2,805 via Form I-907 for H-1B petitions.",
+            "key_facts": [
+              "2,805"
+            ],
+            "must_include": [
+              "2,805"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "question": "When does the H1B cap season start?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "USCIS typically opens H-1B registration at the start of March for the upcoming fiscal year.",
+            "key_facts": [
+              "march"
+            ],
+            "must_include": [
+              "march"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "question": "How long is H1B valid initially?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Initial H-1B approval can be granted for up to three years.",
+            "key_facts": [
+              "three"
+            ],
+            "must_include": [
+              "three"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "question": "What is the advanced degree cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "There are 20,000 additional H-1B visas reserved for beneficiaries with U.S. advanced degrees.",
+            "key_facts": [
+              "20,000"
+            ],
+            "must_include": [
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 8,
+          "question": "When can H1B start work?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B employment tied to the cap generally cannot begin before October 1 of the fiscal year.",
+            "key_facts": [
+              "october 1"
+            ],
+            "must_include": [
+              "october"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "question": "What is the fraud prevention fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Most initial H-1B petitions require a $500 Fraud Prevention and Detection fee.",
+            "key_facts": [
+              "500"
+            ],
+            "must_include": [
+              "500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "question": "How many H1Bs are issued annually?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Congress authorizes 65,000 regular H-1B visas plus 20,000 for advanced degree holders each year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "question": "What education is required for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B roles require a minimum of a bachelor's degree or its equivalent in the specialty occupation.",
+            "key_facts": [
+              "bachelor",
+              "degree"
+            ],
+            "must_include": [
+              "bachelor",
+              "degree"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "question": "Can I self-petition for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "No, an employer must file the H-1B petition on behalf of the worker; self-petitioning is not allowed.",
+            "key_facts": [
+              "employer",
+              "file"
+            ],
+            "must_include": [
+              "employer",
+              "file"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "question": "Does H1B allow dual intent?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B is a dual-intent classification allowing an intent to pursue permanent residence.",
+            "key_facts": [
+              "dual",
+              "intent"
+            ],
+            "must_include": [
+              "dual",
+              "intent"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 14,
+          "question": "Who must file the H1B petition?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The U.S. employer files Form I-129 with a certified Labor Condition Application before hiring the worker.",
+            "key_facts": [
+              "employer",
+              "i-129"
+            ],
+            "must_include": [
+              "employer",
+              "i-129"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 15,
+          "question": "Is work experience equivalent to degree?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "In limited cases, three years of specialized training or experience may substitute for one year of education toward the bachelor's requirement.",
+            "key_facts": [
+              "experience",
+              "education"
+            ],
+            "must_include": [
+              "experience",
+              "education"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 16,
+          "question": "Can H1B change employers?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, an H-1B worker can change employers if the new employer files a petition and portability rules are met.",
+            "key_facts": [
+              "change",
+              "petition"
+            ],
+            "must_include": [
+              "change",
+              "petition"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 17,
+          "question": "What is a specialty occupation?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "It is a position that requires theoretical and practical application of highly specialized knowledge and at least a bachelor's degree in the field.",
+            "key_facts": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_include": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 18,
+          "question": "Do I need labor certification for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B petitions require a certified Labor Condition Application from the Department of Labor, not a PERM labor certification.",
+            "key_facts": [
+              "labor condition application"
+            ],
+            "must_include": [
+              "labor condition application"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "question": "Can H1B be extended beyond 6 years?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Extensions beyond six years may be possible with approved I-140 petitions or AC21 provisions.",
+            "key_facts": [
+              "six",
+              "ac21"
+            ],
+            "must_include": [
+              "six",
+              "ac21"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 20,
+          "question": "Is there a minimum salary for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Employers must pay at least the higher of the prevailing wage or the actual wage paid to similar workers.",
+            "key_facts": [
+              "prevailing",
+              "wage"
+            ],
+            "must_include": [
+              "prevailing",
+              "wage"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "question": "I'm on F1 OPT, can I apply for H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, OPT students may apply and can benefit from cap-gap provisions that bridge status until October 1.",
+            "key_facts": [
+              "yes",
+              "cap-gap",
+              "october"
+            ],
+            "must_include": [
+              "yes",
+              "cap-gap"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "question": "If H1B not selected in lottery, can I stay on F1?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If not selected, you remain in F-1 status only until OPT or grace periods expire; cap-gap requires selection.",
+            "key_facts": [
+              "not selected",
+              "status"
+            ],
+            "must_include": [
+              "not selected",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 23,
+          "question": "Can I work while H1B petition is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You may continue working for the same employer if you maintain valid work authorization such as OPT or existing H-1B status.",
+            "key_facts": [
+              "continue",
+              "authorization"
+            ],
+            "must_include": [
+              "continue",
+              "authorization"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 24,
+          "question": "If I change employers, do I need new H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, each new employer must file an H-1B petition, though portability allows work upon USCIS receipt.",
+            "key_facts": [
+              "new employer",
+              "portability"
+            ],
+            "must_include": [
+              "new employer",
+              "portability"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 25,
+          "question": "Can H1B lead to green card?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B holders can pursue permanent residence through employment-based petitions while maintaining H-1B status.",
+            "key_facts": [
+              "green card",
+              "employment-based"
+            ],
+            "must_include": [
+              "green card",
+              "employment-based"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "question": "What happens if H1B is denied after F1 expires?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If H-1B is denied after OPT or F-1 status ends, you generally must depart the U.S. unless another status applies.",
+            "key_facts": [
+              "depart",
+              "status"
+            ],
+            "must_include": [
+              "depart",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "question": "Can I travel while H1B is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Travel is risky; departing the U.S. during change-of-status processing can abandon that request unless you have another visa for reentry.",
+            "key_facts": [
+              "travel",
+              "risky"
+            ],
+            "must_include": [
+              "travel",
+              "risky"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "question": "Does cap-exempt H1B count toward cap later?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Time spent in cap-exempt H-1B status does not count toward the cap, but moving to a cap-subject employer requires lottery selection.",
+            "key_facts": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_include": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "question": "Can I have multiple H1B petitions?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Multiple bona fide employers may file separate H-1B petitions for the same worker; duplicate petitions by the same employer are not allowed.",
+            "key_facts": [
+              "multiple",
+              "employers"
+            ],
+            "must_include": [
+              "multiple",
+              "employers"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 30,
+          "question": "If laid off on H1B, how long can I stay?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You generally receive a 60-day grace period (or until I-94 expiry) to find new employment, change status, or depart.",
+            "key_facts": [
+              "60-day",
+              "grace"
+            ],
+            "must_include": [
+              "60-day",
+              "grace"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 0,
+      "total": 30,
+      "accuracy": 0.0,
+      "avg_response_time": 0.0,
+      "by_category": {}
+    },
+    "semantic_only": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the ACWIA fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The ACWIA fee is $750 for employers with 25 or fewer workers and $1,500 for employers with 26 or more.",
+            "key_facts": [
+              "750",
+              "1,500"
+            ],
+            "must_include": [
+              "750",
+              "1,500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the premium processing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Premium processing currently costs $2,805 via Form I-907 for H-1B petitions.",
+            "key_facts": [
+              "2,805"
+            ],
+            "must_include": [
+              "2,805"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "question": "When does the H1B cap season start?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "USCIS typically opens H-1B registration at the start of March for the upcoming fiscal year.",
+            "key_facts": [
+              "march"
+            ],
+            "must_include": [
+              "march"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "question": "How long is H1B valid initially?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Initial H-1B approval can be granted for up to three years.",
+            "key_facts": [
+              "three"
+            ],
+            "must_include": [
+              "three"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "question": "What is the advanced degree cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "There are 20,000 additional H-1B visas reserved for beneficiaries with U.S. advanced degrees.",
+            "key_facts": [
+              "20,000"
+            ],
+            "must_include": [
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 8,
+          "question": "When can H1B start work?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B employment tied to the cap generally cannot begin before October 1 of the fiscal year.",
+            "key_facts": [
+              "october 1"
+            ],
+            "must_include": [
+              "october"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "question": "What is the fraud prevention fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Most initial H-1B petitions require a $500 Fraud Prevention and Detection fee.",
+            "key_facts": [
+              "500"
+            ],
+            "must_include": [
+              "500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "question": "How many H1Bs are issued annually?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Congress authorizes 65,000 regular H-1B visas plus 20,000 for advanced degree holders each year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "question": "What education is required for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B roles require a minimum of a bachelor's degree or its equivalent in the specialty occupation.",
+            "key_facts": [
+              "bachelor",
+              "degree"
+            ],
+            "must_include": [
+              "bachelor",
+              "degree"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "question": "Can I self-petition for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "No, an employer must file the H-1B petition on behalf of the worker; self-petitioning is not allowed.",
+            "key_facts": [
+              "employer",
+              "file"
+            ],
+            "must_include": [
+              "employer",
+              "file"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "question": "Does H1B allow dual intent?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B is a dual-intent classification allowing an intent to pursue permanent residence.",
+            "key_facts": [
+              "dual",
+              "intent"
+            ],
+            "must_include": [
+              "dual",
+              "intent"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 14,
+          "question": "Who must file the H1B petition?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The U.S. employer files Form I-129 with a certified Labor Condition Application before hiring the worker.",
+            "key_facts": [
+              "employer",
+              "i-129"
+            ],
+            "must_include": [
+              "employer",
+              "i-129"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 15,
+          "question": "Is work experience equivalent to degree?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "In limited cases, three years of specialized training or experience may substitute for one year of education toward the bachelor's requirement.",
+            "key_facts": [
+              "experience",
+              "education"
+            ],
+            "must_include": [
+              "experience",
+              "education"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 16,
+          "question": "Can H1B change employers?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, an H-1B worker can change employers if the new employer files a petition and portability rules are met.",
+            "key_facts": [
+              "change",
+              "petition"
+            ],
+            "must_include": [
+              "change",
+              "petition"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 17,
+          "question": "What is a specialty occupation?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "It is a position that requires theoretical and practical application of highly specialized knowledge and at least a bachelor's degree in the field.",
+            "key_facts": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_include": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 18,
+          "question": "Do I need labor certification for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B petitions require a certified Labor Condition Application from the Department of Labor, not a PERM labor certification.",
+            "key_facts": [
+              "labor condition application"
+            ],
+            "must_include": [
+              "labor condition application"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "question": "Can H1B be extended beyond 6 years?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Extensions beyond six years may be possible with approved I-140 petitions or AC21 provisions.",
+            "key_facts": [
+              "six",
+              "ac21"
+            ],
+            "must_include": [
+              "six",
+              "ac21"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 20,
+          "question": "Is there a minimum salary for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Employers must pay at least the higher of the prevailing wage or the actual wage paid to similar workers.",
+            "key_facts": [
+              "prevailing",
+              "wage"
+            ],
+            "must_include": [
+              "prevailing",
+              "wage"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "question": "I'm on F1 OPT, can I apply for H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, OPT students may apply and can benefit from cap-gap provisions that bridge status until October 1.",
+            "key_facts": [
+              "yes",
+              "cap-gap",
+              "october"
+            ],
+            "must_include": [
+              "yes",
+              "cap-gap"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "question": "If H1B not selected in lottery, can I stay on F1?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If not selected, you remain in F-1 status only until OPT or grace periods expire; cap-gap requires selection.",
+            "key_facts": [
+              "not selected",
+              "status"
+            ],
+            "must_include": [
+              "not selected",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 23,
+          "question": "Can I work while H1B petition is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You may continue working for the same employer if you maintain valid work authorization such as OPT or existing H-1B status.",
+            "key_facts": [
+              "continue",
+              "authorization"
+            ],
+            "must_include": [
+              "continue",
+              "authorization"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 24,
+          "question": "If I change employers, do I need new H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, each new employer must file an H-1B petition, though portability allows work upon USCIS receipt.",
+            "key_facts": [
+              "new employer",
+              "portability"
+            ],
+            "must_include": [
+              "new employer",
+              "portability"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 25,
+          "question": "Can H1B lead to green card?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B holders can pursue permanent residence through employment-based petitions while maintaining H-1B status.",
+            "key_facts": [
+              "green card",
+              "employment-based"
+            ],
+            "must_include": [
+              "green card",
+              "employment-based"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "question": "What happens if H1B is denied after F1 expires?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If H-1B is denied after OPT or F-1 status ends, you generally must depart the U.S. unless another status applies.",
+            "key_facts": [
+              "depart",
+              "status"
+            ],
+            "must_include": [
+              "depart",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "question": "Can I travel while H1B is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Travel is risky; departing the U.S. during change-of-status processing can abandon that request unless you have another visa for reentry.",
+            "key_facts": [
+              "travel",
+              "risky"
+            ],
+            "must_include": [
+              "travel",
+              "risky"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "question": "Does cap-exempt H1B count toward cap later?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Time spent in cap-exempt H-1B status does not count toward the cap, but moving to a cap-subject employer requires lottery selection.",
+            "key_facts": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_include": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "question": "Can I have multiple H1B petitions?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Multiple bona fide employers may file separate H-1B petitions for the same worker; duplicate petitions by the same employer are not allowed.",
+            "key_facts": [
+              "multiple",
+              "employers"
+            ],
+            "must_include": [
+              "multiple",
+              "employers"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 30,
+          "question": "If laid off on H1B, how long can I stay?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You generally receive a 60-day grace period (or until I-94 expiry) to find new employment, change status, or depart.",
+            "key_facts": [
+              "60-day",
+              "grace"
+            ],
+            "must_include": [
+              "60-day",
+              "grace"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 0,
+      "total": 30,
+      "accuracy": 0.0,
+      "avg_response_time": 0.0,
+      "by_category": {}
+    },
+    "bm25_only": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the ACWIA fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The ACWIA fee is $750 for employers with 25 or fewer workers and $1,500 for employers with 26 or more.",
+            "key_facts": [
+              "750",
+              "1,500"
+            ],
+            "must_include": [
+              "750",
+              "1,500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the premium processing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Premium processing currently costs $2,805 via Form I-907 for H-1B petitions.",
+            "key_facts": [
+              "2,805"
+            ],
+            "must_include": [
+              "2,805"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "question": "When does the H1B cap season start?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "USCIS typically opens H-1B registration at the start of March for the upcoming fiscal year.",
+            "key_facts": [
+              "march"
+            ],
+            "must_include": [
+              "march"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "question": "How long is H1B valid initially?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Initial H-1B approval can be granted for up to three years.",
+            "key_facts": [
+              "three"
+            ],
+            "must_include": [
+              "three"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "question": "What is the advanced degree cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "There are 20,000 additional H-1B visas reserved for beneficiaries with U.S. advanced degrees.",
+            "key_facts": [
+              "20,000"
+            ],
+            "must_include": [
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 8,
+          "question": "When can H1B start work?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B employment tied to the cap generally cannot begin before October 1 of the fiscal year.",
+            "key_facts": [
+              "october 1"
+            ],
+            "must_include": [
+              "october"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "question": "What is the fraud prevention fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Most initial H-1B petitions require a $500 Fraud Prevention and Detection fee.",
+            "key_facts": [
+              "500"
+            ],
+            "must_include": [
+              "500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "question": "How many H1Bs are issued annually?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Congress authorizes 65,000 regular H-1B visas plus 20,000 for advanced degree holders each year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "question": "What education is required for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B roles require a minimum of a bachelor's degree or its equivalent in the specialty occupation.",
+            "key_facts": [
+              "bachelor",
+              "degree"
+            ],
+            "must_include": [
+              "bachelor",
+              "degree"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "question": "Can I self-petition for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "No, an employer must file the H-1B petition on behalf of the worker; self-petitioning is not allowed.",
+            "key_facts": [
+              "employer",
+              "file"
+            ],
+            "must_include": [
+              "employer",
+              "file"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "question": "Does H1B allow dual intent?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B is a dual-intent classification allowing an intent to pursue permanent residence.",
+            "key_facts": [
+              "dual",
+              "intent"
+            ],
+            "must_include": [
+              "dual",
+              "intent"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 14,
+          "question": "Who must file the H1B petition?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The U.S. employer files Form I-129 with a certified Labor Condition Application before hiring the worker.",
+            "key_facts": [
+              "employer",
+              "i-129"
+            ],
+            "must_include": [
+              "employer",
+              "i-129"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 15,
+          "question": "Is work experience equivalent to degree?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "In limited cases, three years of specialized training or experience may substitute for one year of education toward the bachelor's requirement.",
+            "key_facts": [
+              "experience",
+              "education"
+            ],
+            "must_include": [
+              "experience",
+              "education"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 16,
+          "question": "Can H1B change employers?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, an H-1B worker can change employers if the new employer files a petition and portability rules are met.",
+            "key_facts": [
+              "change",
+              "petition"
+            ],
+            "must_include": [
+              "change",
+              "petition"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 17,
+          "question": "What is a specialty occupation?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "It is a position that requires theoretical and practical application of highly specialized knowledge and at least a bachelor's degree in the field.",
+            "key_facts": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_include": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 18,
+          "question": "Do I need labor certification for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B petitions require a certified Labor Condition Application from the Department of Labor, not a PERM labor certification.",
+            "key_facts": [
+              "labor condition application"
+            ],
+            "must_include": [
+              "labor condition application"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "question": "Can H1B be extended beyond 6 years?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Extensions beyond six years may be possible with approved I-140 petitions or AC21 provisions.",
+            "key_facts": [
+              "six",
+              "ac21"
+            ],
+            "must_include": [
+              "six",
+              "ac21"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 20,
+          "question": "Is there a minimum salary for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Employers must pay at least the higher of the prevailing wage or the actual wage paid to similar workers.",
+            "key_facts": [
+              "prevailing",
+              "wage"
+            ],
+            "must_include": [
+              "prevailing",
+              "wage"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "question": "I'm on F1 OPT, can I apply for H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, OPT students may apply and can benefit from cap-gap provisions that bridge status until October 1.",
+            "key_facts": [
+              "yes",
+              "cap-gap",
+              "october"
+            ],
+            "must_include": [
+              "yes",
+              "cap-gap"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "question": "If H1B not selected in lottery, can I stay on F1?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If not selected, you remain in F-1 status only until OPT or grace periods expire; cap-gap requires selection.",
+            "key_facts": [
+              "not selected",
+              "status"
+            ],
+            "must_include": [
+              "not selected",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 23,
+          "question": "Can I work while H1B petition is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You may continue working for the same employer if you maintain valid work authorization such as OPT or existing H-1B status.",
+            "key_facts": [
+              "continue",
+              "authorization"
+            ],
+            "must_include": [
+              "continue",
+              "authorization"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 24,
+          "question": "If I change employers, do I need new H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, each new employer must file an H-1B petition, though portability allows work upon USCIS receipt.",
+            "key_facts": [
+              "new employer",
+              "portability"
+            ],
+            "must_include": [
+              "new employer",
+              "portability"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 25,
+          "question": "Can H1B lead to green card?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B holders can pursue permanent residence through employment-based petitions while maintaining H-1B status.",
+            "key_facts": [
+              "green card",
+              "employment-based"
+            ],
+            "must_include": [
+              "green card",
+              "employment-based"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "question": "What happens if H1B is denied after F1 expires?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If H-1B is denied after OPT or F-1 status ends, you generally must depart the U.S. unless another status applies.",
+            "key_facts": [
+              "depart",
+              "status"
+            ],
+            "must_include": [
+              "depart",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "question": "Can I travel while H1B is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Travel is risky; departing the U.S. during change-of-status processing can abandon that request unless you have another visa for reentry.",
+            "key_facts": [
+              "travel",
+              "risky"
+            ],
+            "must_include": [
+              "travel",
+              "risky"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "question": "Does cap-exempt H1B count toward cap later?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Time spent in cap-exempt H-1B status does not count toward the cap, but moving to a cap-subject employer requires lottery selection.",
+            "key_facts": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_include": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "question": "Can I have multiple H1B petitions?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Multiple bona fide employers may file separate H-1B petitions for the same worker; duplicate petitions by the same employer are not allowed.",
+            "key_facts": [
+              "multiple",
+              "employers"
+            ],
+            "must_include": [
+              "multiple",
+              "employers"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 30,
+          "question": "If laid off on H1B, how long can I stay?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You generally receive a 60-day grace period (or until I-94 expiry) to find new employment, change status, or depart.",
+            "key_facts": [
+              "60-day",
+              "grace"
+            ],
+            "must_include": [
+              "60-day",
+              "grace"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 0,
+      "total": 30,
+      "accuracy": 0.0,
+      "avg_response_time": 0.0,
+      "by_category": {}
+    },
+    "hybrid": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the ACWIA fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The ACWIA fee is $750 for employers with 25 or fewer workers and $1,500 for employers with 26 or more.",
+            "key_facts": [
+              "750",
+              "1,500"
+            ],
+            "must_include": [
+              "750",
+              "1,500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the premium processing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Premium processing currently costs $2,805 via Form I-907 for H-1B petitions.",
+            "key_facts": [
+              "2,805"
+            ],
+            "must_include": [
+              "2,805"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "question": "When does the H1B cap season start?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "USCIS typically opens H-1B registration at the start of March for the upcoming fiscal year.",
+            "key_facts": [
+              "march"
+            ],
+            "must_include": [
+              "march"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "question": "How long is H1B valid initially?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Initial H-1B approval can be granted for up to three years.",
+            "key_facts": [
+              "three"
+            ],
+            "must_include": [
+              "three"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "question": "What is the advanced degree cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "There are 20,000 additional H-1B visas reserved for beneficiaries with U.S. advanced degrees.",
+            "key_facts": [
+              "20,000"
+            ],
+            "must_include": [
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 8,
+          "question": "When can H1B start work?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B employment tied to the cap generally cannot begin before October 1 of the fiscal year.",
+            "key_facts": [
+              "october 1"
+            ],
+            "must_include": [
+              "october"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "question": "What is the fraud prevention fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Most initial H-1B petitions require a $500 Fraud Prevention and Detection fee.",
+            "key_facts": [
+              "500"
+            ],
+            "must_include": [
+              "500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "question": "How many H1Bs are issued annually?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Congress authorizes 65,000 regular H-1B visas plus 20,000 for advanced degree holders each year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "question": "What education is required for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B roles require a minimum of a bachelor's degree or its equivalent in the specialty occupation.",
+            "key_facts": [
+              "bachelor",
+              "degree"
+            ],
+            "must_include": [
+              "bachelor",
+              "degree"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "question": "Can I self-petition for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "No, an employer must file the H-1B petition on behalf of the worker; self-petitioning is not allowed.",
+            "key_facts": [
+              "employer",
+              "file"
+            ],
+            "must_include": [
+              "employer",
+              "file"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "question": "Does H1B allow dual intent?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B is a dual-intent classification allowing an intent to pursue permanent residence.",
+            "key_facts": [
+              "dual",
+              "intent"
+            ],
+            "must_include": [
+              "dual",
+              "intent"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 14,
+          "question": "Who must file the H1B petition?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The U.S. employer files Form I-129 with a certified Labor Condition Application before hiring the worker.",
+            "key_facts": [
+              "employer",
+              "i-129"
+            ],
+            "must_include": [
+              "employer",
+              "i-129"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 15,
+          "question": "Is work experience equivalent to degree?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "In limited cases, three years of specialized training or experience may substitute for one year of education toward the bachelor's requirement.",
+            "key_facts": [
+              "experience",
+              "education"
+            ],
+            "must_include": [
+              "experience",
+              "education"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 16,
+          "question": "Can H1B change employers?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, an H-1B worker can change employers if the new employer files a petition and portability rules are met.",
+            "key_facts": [
+              "change",
+              "petition"
+            ],
+            "must_include": [
+              "change",
+              "petition"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 17,
+          "question": "What is a specialty occupation?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "It is a position that requires theoretical and practical application of highly specialized knowledge and at least a bachelor's degree in the field.",
+            "key_facts": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_include": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 18,
+          "question": "Do I need labor certification for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B petitions require a certified Labor Condition Application from the Department of Labor, not a PERM labor certification.",
+            "key_facts": [
+              "labor condition application"
+            ],
+            "must_include": [
+              "labor condition application"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "question": "Can H1B be extended beyond 6 years?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Extensions beyond six years may be possible with approved I-140 petitions or AC21 provisions.",
+            "key_facts": [
+              "six",
+              "ac21"
+            ],
+            "must_include": [
+              "six",
+              "ac21"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 20,
+          "question": "Is there a minimum salary for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Employers must pay at least the higher of the prevailing wage or the actual wage paid to similar workers.",
+            "key_facts": [
+              "prevailing",
+              "wage"
+            ],
+            "must_include": [
+              "prevailing",
+              "wage"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "question": "I'm on F1 OPT, can I apply for H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, OPT students may apply and can benefit from cap-gap provisions that bridge status until October 1.",
+            "key_facts": [
+              "yes",
+              "cap-gap",
+              "october"
+            ],
+            "must_include": [
+              "yes",
+              "cap-gap"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "question": "If H1B not selected in lottery, can I stay on F1?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If not selected, you remain in F-1 status only until OPT or grace periods expire; cap-gap requires selection.",
+            "key_facts": [
+              "not selected",
+              "status"
+            ],
+            "must_include": [
+              "not selected",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 23,
+          "question": "Can I work while H1B petition is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You may continue working for the same employer if you maintain valid work authorization such as OPT or existing H-1B status.",
+            "key_facts": [
+              "continue",
+              "authorization"
+            ],
+            "must_include": [
+              "continue",
+              "authorization"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 24,
+          "question": "If I change employers, do I need new H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, each new employer must file an H-1B petition, though portability allows work upon USCIS receipt.",
+            "key_facts": [
+              "new employer",
+              "portability"
+            ],
+            "must_include": [
+              "new employer",
+              "portability"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 25,
+          "question": "Can H1B lead to green card?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B holders can pursue permanent residence through employment-based petitions while maintaining H-1B status.",
+            "key_facts": [
+              "green card",
+              "employment-based"
+            ],
+            "must_include": [
+              "green card",
+              "employment-based"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "question": "What happens if H1B is denied after F1 expires?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If H-1B is denied after OPT or F-1 status ends, you generally must depart the U.S. unless another status applies.",
+            "key_facts": [
+              "depart",
+              "status"
+            ],
+            "must_include": [
+              "depart",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "question": "Can I travel while H1B is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Travel is risky; departing the U.S. during change-of-status processing can abandon that request unless you have another visa for reentry.",
+            "key_facts": [
+              "travel",
+              "risky"
+            ],
+            "must_include": [
+              "travel",
+              "risky"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "question": "Does cap-exempt H1B count toward cap later?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Time spent in cap-exempt H-1B status does not count toward the cap, but moving to a cap-subject employer requires lottery selection.",
+            "key_facts": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_include": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "question": "Can I have multiple H1B petitions?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Multiple bona fide employers may file separate H-1B petitions for the same worker; duplicate petitions by the same employer are not allowed.",
+            "key_facts": [
+              "multiple",
+              "employers"
+            ],
+            "must_include": [
+              "multiple",
+              "employers"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 30,
+          "question": "If laid off on H1B, how long can I stay?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You generally receive a 60-day grace period (or until I-94 expiry) to find new employment, change status, or depart.",
+            "key_facts": [
+              "60-day",
+              "grace"
+            ],
+            "must_include": [
+              "60-day",
+              "grace"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 0,
+      "total": 30,
+      "accuracy": 0.0,
+      "avg_response_time": 0.0,
+      "by_category": {}
+    },
+    "enhanced": {
+      "questions": [
+        {
+          "id": 1,
+          "question": "What is the H1B cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "65,000 visas for the regular cap plus 20,000 for the advanced degree exemption each fiscal year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000",
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 2,
+          "question": "How much is the H1B filing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The base filing fee for Form I-129 H-1B petitions is $460.",
+            "key_facts": [
+              "460"
+            ],
+            "must_include": [
+              "460"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 3,
+          "question": "What is the ACWIA fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The ACWIA fee is $750 for employers with 25 or fewer workers and $1,500 for employers with 26 or more.",
+            "key_facts": [
+              "750",
+              "1,500"
+            ],
+            "must_include": [
+              "750",
+              "1,500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 4,
+          "question": "What is the premium processing fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Premium processing currently costs $2,805 via Form I-907 for H-1B petitions.",
+            "key_facts": [
+              "2,805"
+            ],
+            "must_include": [
+              "2,805"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 5,
+          "question": "When does the H1B cap season start?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "USCIS typically opens H-1B registration at the start of March for the upcoming fiscal year.",
+            "key_facts": [
+              "march"
+            ],
+            "must_include": [
+              "march"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 6,
+          "question": "How long is H1B valid initially?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Initial H-1B approval can be granted for up to three years.",
+            "key_facts": [
+              "three"
+            ],
+            "must_include": [
+              "three"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 7,
+          "question": "What is the advanced degree cap?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "There are 20,000 additional H-1B visas reserved for beneficiaries with U.S. advanced degrees.",
+            "key_facts": [
+              "20,000"
+            ],
+            "must_include": [
+              "20,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 8,
+          "question": "When can H1B start work?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B employment tied to the cap generally cannot begin before October 1 of the fiscal year.",
+            "key_facts": [
+              "october 1"
+            ],
+            "must_include": [
+              "october"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 9,
+          "question": "What is the fraud prevention fee?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Most initial H-1B petitions require a $500 Fraud Prevention and Detection fee.",
+            "key_facts": [
+              "500"
+            ],
+            "must_include": [
+              "500"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 10,
+          "question": "How many H1Bs are issued annually?",
+          "category": "fact",
+          "difficulty": "easy",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Congress authorizes 65,000 regular H-1B visas plus 20,000 for advanced degree holders each year.",
+            "key_facts": [
+              "65,000",
+              "20,000"
+            ],
+            "must_include": [
+              "65,000"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 1,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 11,
+          "question": "What education is required for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B roles require a minimum of a bachelor's degree or its equivalent in the specialty occupation.",
+            "key_facts": [
+              "bachelor",
+              "degree"
+            ],
+            "must_include": [
+              "bachelor",
+              "degree"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 12,
+          "question": "Can I self-petition for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "No, an employer must file the H-1B petition on behalf of the worker; self-petitioning is not allowed.",
+            "key_facts": [
+              "employer",
+              "file"
+            ],
+            "must_include": [
+              "employer",
+              "file"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 13,
+          "question": "Does H1B allow dual intent?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B is a dual-intent classification allowing an intent to pursue permanent residence.",
+            "key_facts": [
+              "dual",
+              "intent"
+            ],
+            "must_include": [
+              "dual",
+              "intent"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 14,
+          "question": "Who must file the H1B petition?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "The U.S. employer files Form I-129 with a certified Labor Condition Application before hiring the worker.",
+            "key_facts": [
+              "employer",
+              "i-129"
+            ],
+            "must_include": [
+              "employer",
+              "i-129"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 15,
+          "question": "Is work experience equivalent to degree?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "In limited cases, three years of specialized training or experience may substitute for one year of education toward the bachelor's requirement.",
+            "key_facts": [
+              "experience",
+              "education"
+            ],
+            "must_include": [
+              "experience",
+              "education"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 16,
+          "question": "Can H1B change employers?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, an H-1B worker can change employers if the new employer files a petition and portability rules are met.",
+            "key_facts": [
+              "change",
+              "petition"
+            ],
+            "must_include": [
+              "change",
+              "petition"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 17,
+          "question": "What is a specialty occupation?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "It is a position that requires theoretical and practical application of highly specialized knowledge and at least a bachelor's degree in the field.",
+            "key_facts": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_include": [
+              "specialized",
+              "bachelor"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 18,
+          "question": "Do I need labor certification for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "H-1B petitions require a certified Labor Condition Application from the Department of Labor, not a PERM labor certification.",
+            "key_facts": [
+              "labor condition application"
+            ],
+            "must_include": [
+              "labor condition application"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 19,
+          "question": "Can H1B be extended beyond 6 years?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Extensions beyond six years may be possible with approved I-140 petitions or AC21 provisions.",
+            "key_facts": [
+              "six",
+              "ac21"
+            ],
+            "must_include": [
+              "six",
+              "ac21"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 20,
+          "question": "Is there a minimum salary for H1B?",
+          "category": "requirement",
+          "difficulty": "medium",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Employers must pay at least the higher of the prevailing wage or the actual wage paid to similar workers.",
+            "key_facts": [
+              "prevailing",
+              "wage"
+            ],
+            "must_include": [
+              "prevailing",
+              "wage"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 21,
+          "question": "I'm on F1 OPT, can I apply for H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, OPT students may apply and can benefit from cap-gap provisions that bridge status until October 1.",
+            "key_facts": [
+              "yes",
+              "cap-gap",
+              "october"
+            ],
+            "must_include": [
+              "yes",
+              "cap-gap"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 22,
+          "question": "If H1B not selected in lottery, can I stay on F1?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If not selected, you remain in F-1 status only until OPT or grace periods expire; cap-gap requires selection.",
+            "key_facts": [
+              "not selected",
+              "status"
+            ],
+            "must_include": [
+              "not selected",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 23,
+          "question": "Can I work while H1B petition is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You may continue working for the same employer if you maintain valid work authorization such as OPT or existing H-1B status.",
+            "key_facts": [
+              "continue",
+              "authorization"
+            ],
+            "must_include": [
+              "continue",
+              "authorization"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 24,
+          "question": "If I change employers, do I need new H1B?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, each new employer must file an H-1B petition, though portability allows work upon USCIS receipt.",
+            "key_facts": [
+              "new employer",
+              "portability"
+            ],
+            "must_include": [
+              "new employer",
+              "portability"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 25,
+          "question": "Can H1B lead to green card?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Yes, H-1B holders can pursue permanent residence through employment-based petitions while maintaining H-1B status.",
+            "key_facts": [
+              "green card",
+              "employment-based"
+            ],
+            "must_include": [
+              "green card",
+              "employment-based"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 26,
+          "question": "What happens if H1B is denied after F1 expires?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "If H-1B is denied after OPT or F-1 status ends, you generally must depart the U.S. unless another status applies.",
+            "key_facts": [
+              "depart",
+              "status"
+            ],
+            "must_include": [
+              "depart",
+              "status"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 27,
+          "question": "Can I travel while H1B is pending?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Travel is risky; departing the U.S. during change-of-status processing can abandon that request unless you have another visa for reentry.",
+            "key_facts": [
+              "travel",
+              "risky"
+            ],
+            "must_include": [
+              "travel",
+              "risky"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 28,
+          "question": "Does cap-exempt H1B count toward cap later?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Time spent in cap-exempt H-1B status does not count toward the cap, but moving to a cap-subject employer requires lottery selection.",
+            "key_facts": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_include": [
+              "cap-exempt",
+              "cap-subject"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 29,
+          "question": "Can I have multiple H1B petitions?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "Multiple bona fide employers may file separate H-1B petitions for the same worker; duplicate petitions by the same employer are not allowed.",
+            "key_facts": [
+              "multiple",
+              "employers"
+            ],
+            "must_include": [
+              "multiple",
+              "employers"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        },
+        {
+          "id": 30,
+          "question": "If laid off on H1B, how long can I stay?",
+          "category": "complex",
+          "difficulty": "hard",
+          "error": "'ModelManager' object has no attribute 'generate_response'",
+          "correct": false,
+          "ground_truth": {
+            "answer": "You generally receive a 60-day grace period (or until I-94 expiry) to find new employment, change status, or depart.",
+            "key_facts": [
+              "60-day",
+              "grace"
+            ],
+            "must_include": [
+              "60-day",
+              "grace"
+            ],
+            "must_not_include": [],
+            "acceptable_variations": [],
+            "tier": 2,
+            "source_urls": [
+              "https://www.uscis.gov/working-in-the-united-states/temporary-workers/h-1b-specialty-occupations"
+            ]
+          }
+        }
+      ],
+      "correct": 0,
+      "total": 30,
+      "accuracy": 0.0,
+      "avg_response_time": 0.0,
+      "by_category": {}
+    }
+  }
+}

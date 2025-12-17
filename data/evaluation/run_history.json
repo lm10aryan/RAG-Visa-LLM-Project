@@ -1,0 +1,38 @@
+{
+  "runs": [
+    {
+      "id": "2025-12-17T21:05:08.965475",
+      "results_file": "data/evaluation/results/results_20251217T210508.965475.json",
+      "metrics_file": "data/evaluation/results/metrics.json",
+      "variants": [
+        "baseline",
+        "semantic_only",
+        "bm25_only",
+        "hybrid",
+        "enhanced"
+      ],
+      "dataset_path": "data/evaluation/test_questions.json",
+      "question_count": 30,
+      "max_questions": null,
+      "last_updated": "2025-12-17T21:51:15.534791",
+      "mode": "reprocess"
+    },
+    {
+      "id": "2025-12-17T21:58:02.297845",
+      "results_file": "data/evaluation/results/results_20251217T215802.297845.json",
+      "metrics_file": "data/evaluation/results/metrics.json",
+      "variants": [
+        "baseline",
+        "semantic_only",
+        "bm25_only",
+        "hybrid",
+        "enhanced"
+      ],
+      "dataset_path": "data/evaluation/test_questions.json",
+      "question_count": 10,
+      "max_questions": 10,
+      "last_updated": "2025-12-17T22:01:52.232837",
+      "mode": "fresh"
+    }
+  ]
+}
