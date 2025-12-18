@@ -26,6 +26,10 @@ class MetricsCalculator:
                     cat: stats.get("accuracy", 0.0)
                     for cat, stats in data.get("by_category", {}).items()
                 },
+                "by_difficulty": {
+                    diff: stats.get("accuracy", 0.0)
+                    for diff, stats in data.get("by_difficulty", {}).items()
+                },
             },
             "response_time": {
                 "avg": data.get("avg_response_time", 0.0),
@@ -118,4 +122,3 @@ class MetricsCalculator:
 
 
 __all__ = ["MetricsCalculator"]
-

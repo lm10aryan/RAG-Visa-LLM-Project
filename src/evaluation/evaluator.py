@@ -67,6 +67,7 @@ class Evaluator:
             "accuracy": 0.0,
             "avg_response_time": 0.0,
             "by_category": {},
+            "by_difficulty": {},
         }
         total_time = 0.0
 
@@ -134,10 +135,23 @@ class Evaluator:
             if is_correct:
                 category_bucket["correct"] += 1
 
+            difficulty_bucket = variant_results["by_difficulty"].setdefault(
+                test_q["difficulty"],
+                {"correct": 0, "total": 0},
+            )
+            difficulty_bucket["total"] += 1
+            if is_correct:
+                difficulty_bucket["correct"] += 1
+
         if variant_results["total"]:
             variant_results["accuracy"] = variant_results["correct"] / variant_results["total"]
             variant_results["avg_response_time"] = total_time / variant_results["total"]
         for stats in variant_results["by_category"].values():
+            if stats["total"]:
+                stats["accuracy"] = stats["correct"] / stats["total"]
+            else:
+                stats["accuracy"] = 0.0
+        for stats in variant_results["by_difficulty"].values():
             if stats["total"]:
                 stats["accuracy"] = stats["correct"] / stats["total"]
             else:

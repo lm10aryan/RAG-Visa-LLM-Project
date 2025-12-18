@@ -17,9 +17,10 @@ class Visualizer:
     def generate_all_plots(self, metrics: Dict) -> None:
         self.plot_overall_accuracy(metrics, self.output_dir / "01_overall_accuracy.png")
         self.plot_category_breakdown(metrics, self.output_dir / "02_category_breakdown.png")
-        self.plot_ablation(metrics, self.output_dir / "03_ablation_study.png")
-        self.plot_confidence(metrics, self.output_dir / "04_confidence_calibration.png")
-        self.plot_response_time(metrics, self.output_dir / "05_response_times.png")
+        self.plot_difficulty_breakdown(metrics, self.output_dir / "03_difficulty_breakdown.png")
+        self.plot_ablation(metrics, self.output_dir / "04_ablation_study.png")
+        self.plot_confidence(metrics, self.output_dir / "05_confidence_calibration.png")
+        self.plot_response_time(metrics, self.output_dir / "06_response_times.png")
 
     def plot_overall_accuracy(self, metrics: Dict, path: Path) -> None:
         variants = metrics.get("by_variant", {})
@@ -56,6 +57,38 @@ class Visualizer:
         ax.set_ylabel("Accuracy (%)")
         ax.set_title("Accuracy by Question Category")
         ax.legend()
+        plt.tight_layout()
+        fig.savefig(path, dpi=300)
+        plt.close(fig)
+
+    def plot_difficulty_breakdown(self, metrics: Dict, path: Path) -> None:
+        """Plot accuracy by difficulty level for each variant."""
+        variants = metrics.get("by_variant", {})
+        if not variants:
+            return
+
+        difficulty_levels = ["L1_fact", "L2_definition", "L3_conditional", "L4_multi_step", "L5_edge_case"]
+        display_labels = ["L1\nFact", "L2\nDefinition", "L3\nConditional", "L4\nMulti-step", "L5\nEdge Case"]
+
+        x = np.arange(len(difficulty_levels))
+        width = 0.15
+
+        fig, ax = plt.subplots(figsize=(14, 7))
+        colors = ["#3498db", "#2ecc71", "#f39c12", "#9b59b6", "#e74c3c"]
+
+        for idx, (name, stats) in enumerate(variants.items()):
+            by_diff = stats.get("accuracy", {}).get("by_difficulty", {})
+            accs = [by_diff.get(level, 0.0) * 100 for level in difficulty_levels]
+            ax.bar(x + idx * width, accs, width=width, label=name, color=colors[idx % len(colors)])
+
+        ax.set_xticks(x + width * (len(variants) - 1) / 2)
+        ax.set_xticklabels(display_labels)
+        ax.set_ylabel("Accuracy (%)")
+        ax.set_ylim(0, 105)
+        ax.set_title("Accuracy by Difficulty Level")
+        ax.legend(loc="upper right")
+        ax.axhline(y=80, color="gray", linestyle="--", alpha=0.5, label="80% target")
+
         plt.tight_layout()
         fig.savefig(path, dpi=300)
         plt.close(fig)
@@ -122,4 +155,3 @@ class Visualizer:
 
 
 __all__ = ["Visualizer"]
-
